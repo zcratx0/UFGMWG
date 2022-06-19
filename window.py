@@ -7,7 +7,7 @@ for m in get_monitors():
 text = str(text)
 
 width = int(text[24:28])
-height = int(text[37:41])
+height = int(text[37:41]) - 70
 
 background_colour = (234, 212, 252)
 
