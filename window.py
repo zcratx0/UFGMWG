@@ -5,7 +5,7 @@ from screeninfo import get_monitors
 res = ""
 # obtengo informacion de la pantalla
 for m in get_monitors():
-    res = get_monitors()
+    res = m
 # Paso la variable a texto
 res = str(res)
 # recorto los valores del texto y los hago enteros
