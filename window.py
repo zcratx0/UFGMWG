@@ -1,16 +1,19 @@
 import pygame
 from screeninfo import get_monitors
-size = []
+text = ""
 for m in get_monitors():
-    print(m)
-    print("......")
+    text = m
 
+text = str(text)
+
+width = int(text[24:28])
+height = int(text[37:41])
 
 background_colour = (234, 212, 252)
 
 # Define the dimensions of
 # screen object(width,height)
-screen = pygame.display.set_mode((300, 300))
+screen = pygame.display.set_mode((width, height))
 
 # Set the caption of the screen
 pygame.display.set_caption('UFGMWG')
