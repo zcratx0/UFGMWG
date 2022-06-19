@@ -1,11 +1,14 @@
 import pygame
 from screeninfo import get_monitors
+
+# Asigno variable resolucion.
 res = ""
+# obtengo informacion de la pantalla
 for m in get_monitors():
-    res = m
-
+    res = get_monitors()
+# Paso la variable a texto
 res = str(res)
-
+# recorto los valores del texto y los hago enteros
 width = int(res[24:28])
 height = int(res[37:41]) - 70
 
