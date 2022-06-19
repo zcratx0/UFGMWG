@@ -1,13 +1,13 @@
 import pygame
 from screeninfo import get_monitors
-text = ""
+res = ""
 for m in get_monitors():
-    text = m
+    res = m
 
-text = str(text)
+res = str(res)
 
-width = int(text[24:28])
-height = int(text[37:41]) - 70
+width = int(res[24:28])
+height = int(res[37:41]) - 70
 
 background_colour = (234, 212, 252)
 
