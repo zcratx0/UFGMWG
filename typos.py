@@ -1,14 +1,16 @@
 
 class Player():
-    def __init__(self, name, health, speed):
+    def __init__(self, x, y, name, health, speed):
         self.name = name
+        self.x = x
+        self.y = y
         self.health = health
         self.speed = speed
 
-    def name(self):
+    def getName(self):
         return self.name
 
-    def health(self):
+    def getHealth(self):
         return self.health
 
     def isAlive(self):
@@ -16,3 +18,15 @@ class Player():
             return True
         else:
             return False
+
+
+class Prop():
+    def __init__(self, x, y, skin, name, durability):
+        self.name = name
+        self.x = x
+        self.y = y
+        self.skin = skin
+        self.durability = durability
+
+    def setSkin(self, newSkin):
+        self.skin = newSkin
